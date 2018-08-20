@@ -1,0 +1,2 @@
+# Leap_Skills-Sales
+This app provides the admin to assign tasks as well as interns to the registered students. The interns have to check for the students assigned to him and the task assigned to the students. After the completion of the task the intern can update that task is completed and that will get updated at the admin also. The intern have to collect money from the students for their purchase of the products either CP or CP+. The admin have the track of all the previously assigned task to the students and the payment made by them.
