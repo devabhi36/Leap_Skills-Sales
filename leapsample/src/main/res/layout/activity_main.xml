@@ -1,0 +1,119 @@
+<RelativeLayout android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="49dp"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/leap_id"
+        android:shadowColor="#000"
+        android:text="Username Or Email"
+        android:textColor="#040404"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/worksans_regular"/>
+
+    <EditText
+        android:id="@+id/leap_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv2"
+        android:layout_marginBottom="30dp"
+        android:shadowColor="@color/button"
+        android:textColor="#040404"
+        android:textSize="12dp"
+        android:fontFamily="@font/worksans_regular"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:shadowColor="#000"
+        android:text="Password"
+        android:textColor="#040404"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/worksans_regular"/>
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:shadowColor="@color/button"
+        android:textSize="12dp"
+        android:textColor="#040404"
+        android:textColorHint="#040404"
+        android:inputType="textPassword"
+        android:fontFamily="@font/worksans_regular"/>
+
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/leap_id"
+        android:layout_below="@+id/tv2"
+        android:text="SHOW"
+        android:textAppearance="@style/FragmentText"
+        android:textColor="@color/colorPrimaryDark"/>
+    <TextView
+        android:id="@+id/hide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/leap_id"
+        android:layout_below="@+id/tv2"
+        android:text="HIDE"
+        android:textAppearance="@style/FragmentText"
+        android:textColor="@color/colorPrimaryDark"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dob"
+        android:layout_marginTop="25dp"
+        android:shadowColor="#000"
+        android:text="Remember me"
+        android:textColor="#040404"
+        android:textSize="16dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/worksans_regular"/>
+
+    <CheckBox
+        android:id="@+id/remember_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/leap_id"
+        android:layout_alignTop="@+id/tv3"
+        android:background="@color/app_theme"
+        android:focusable="auto"
+        android:shadowColor="@color/button"
+        android:textColor="@color/button"
+        android:textColorHighlight="@color/button"
+        android:textColorHint="@color/button"
+        android:textColorLink="@color/button"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/ad_login"
+        android:layout_width="136dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/remember_me"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_fill"
+        android:onClick="ad_login"
+        android:shadowColor="#000000"
+        android:text="LOGIN"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_medium"/>
+
+
+</RelativeLayout>

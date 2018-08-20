@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssignTask"
+    android:padding="49dp">
+
+    <TextView
+        android:id="@+id/name_assign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/FragmentText"
+        android:textColor="@color/button" />
+    <TextView
+        android:id="@+id/phone_assign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/FragmentText"
+        android:textColor="@color/button"
+        android:layout_below="@+id/name_assign"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/email_assign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/FragmentText"
+        android:textColor="@color/button"
+        android:layout_below="@id/phone_assign"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/FragmentText"
+        android:layout_below="@id/email_assign"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/taskview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/FragmentText"
+        android:text="Select Task"
+        android:layout_below="@+id/payment"
+        android:layout_marginTop="30dp"/>
+
+    <Spinner
+        android:id="@+id/select_task"
+        android:layout_below="@+id/taskview1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"/>
+
+    <TextView
+        android:id="@+id/taskview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/FragmentText"
+        android:text="Select Trainer"
+        android:layout_below="@+id/select_task"
+        android:layout_marginTop="30dp"/>
+
+    <Spinner
+        android:id="@+id/select_trainer"
+        android:layout_below="@+id/taskview2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"/>
+    <ScrollView
+        android:id="@+id/hsc3"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@+id/select_trainer"
+        android:layout_marginTop="40dp">
+        <EditText
+            android:id="@+id/comment_ad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="COMMENT (OPTIONAL)"
+            android:shadowColor="@color/app_text"
+            android:textSize="12dp"
+            android:textColor="#040404"
+            android:textColorHint="#040404"
+            android:fontFamily="@font/worksans_regular"/>
+    </ScrollView>
+    <Button
+        android:id="@+id/assign_task"
+        android:layout_width="136dp"
+        android:layout_height="36dp"
+        android:layout_below="@+id/hsc3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_fill"
+        android:onClick="assign"
+        android:shadowColor="#000000"
+        android:text="ASSIGN"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_medium"/>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/assign_task"
+        android:layout_marginTop="10dp"
+        android:background="#000"/>
+
+    <ScrollView
+        android:id="@+id/assign_sc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/line"
+        android:padding="20dp"
+        android:layout_marginTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:id="@+id/hsc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="7">
+
+
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
+</ScrollView>

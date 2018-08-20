@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="leap.skills.leapsample">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Admin"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Sales"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".AssignTask"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ShowTask"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Lead"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Leadi"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Select_Product"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Pay"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Intern"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".InternTask"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Payi"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Select_Producti"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Details"
+            android:screenOrientation="landscape"></activity>
+    </application>
+
+</manifest>

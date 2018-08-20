@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".InternTask">
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="WELCOME INTERN"
+            android:textAppearance="@style/FragmentText"/>
+
+        <TextView
+            android:id="@+id/tvh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/worksans_regular"
+            android:text="LIST OF STUDENTS"
+            android:background="@drawable/button_fill"
+            android:layout_below="@+id/name1"/>
+
+        <HorizontalScrollView
+            android:id="@+id/hsc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/tvh"
+            android:padding="20dp">
+
+            <TableLayout
+                android:id="@+id/tabi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="7">
+
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/fill_form"
+            android:layout_width="136dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/button_fill"
+            android:onClick="fill_formi"
+            android:shadowColor="#000000"
+            android:text="LEAD"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_below="@+id/hsc2"/>
+
+        <Button
+            android:layout_width="136dp"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_fill"
+            android:onClick="logout_intern"
+            android:shadowColor="#000000"
+            android:text="LOGOUT"
+            android:textColor="#ffffff"
+            android:textSize="14dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto_medium"
+            android:layout_below="@+id/fill_form"
+            android:layout_marginBottom="20dp"/>
+
+
+    </RelativeLayout>
+</ScrollView>

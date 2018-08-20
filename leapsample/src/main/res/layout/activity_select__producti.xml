@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Select_Producti"
+        android:padding="49dp">
+
+        <TextView
+            android:id="@+id/name_show2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/FragmentText"
+            android:textColor="@color/button"
+            android:text="SELECTED STUDENT"/>
+        <TextView
+            android:id="@+id/phone_show2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/FragmentText"
+            android:textColor="@color/button"
+            android:layout_below="@+id/name_show2"
+            android:layout_marginTop="20dp"
+            android:text="SELECTED CONTACT"/>
+
+        <TextView
+            android:id="@+id/email_show2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/FragmentText"
+            android:textColor="@color/button"
+            android:layout_below="@id/phone_show2"
+            android:layout_marginTop="20dp"
+            android:text="SELECTED EMAIL"/>
+
+        <TextView
+            android:id="@+id/lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/FragmentText"
+            android:textSize="30dp"
+            android:layout_below="@id/email_show2"
+            android:layout_marginTop="40dp"
+            android:text="SELECT PRODUCT:"/>
+
+        <TextView
+            android:id="@+id/cp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lable"
+            android:layout_marginTop="30dp"
+            android:text="Product 1.-     CP"
+            android:textAppearance="@style/FragmentText"
+            android:textSize="30dp"
+            android:textColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/cp_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cp"
+            android:layout_marginTop="30dp"
+            android:text="Product 2.-    CP+"
+            android:textAppearance="@style/FragmentText"
+            android:textSize="30dp"
+            android:textColor="@color/colorPrimary"/>
+
+    </RelativeLayout>
+</ScrollView>

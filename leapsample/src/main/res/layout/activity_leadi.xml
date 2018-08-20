@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_theme">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/app_theme">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_launcher_background" />
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/iv1"
+                android:padding="49dp"
+                tools:context=".Leadi"
+                android:background="@color/app_theme">
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="25dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="General Information"
+                    android:textAlignment="center"
+                    android:textColor="@color/button"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="Name"
+                    android:textAlignment="center"
+                    android:textColor="#040404"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv1"
+                    android:layout_below="@+id/tv1"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="Contact No"
+                    android:textAlignment="center"
+                    android:textColor="#040404"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv2"
+                    android:layout_below="@+id/tv2"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:inputType="number"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phone"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="Email"
+                    android:textAlignment="center"
+                    android:textColor="#040404"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv3"
+                    android:layout_below="@+id/tv3"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:inputType="textWebEmailAddress"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="Institution Name"
+                    android:textAlignment="center"
+                    android:textColor="#040404"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/ins_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv4"
+                    android:layout_below="@+id/tv4"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ins_name"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="Book Slot"
+                    android:textAlignment="center"
+                    android:textColor="@color/button"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/book"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="Date (Click Me)"
+                    android:textAlignment="center"
+                    android:textColor="#040404"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv5"
+                    android:layout_below="@+id/tv5"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:inputType="none"
+                    android:textSize="12dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="Time (Click Me)"
+                    android:textAlignment="center"
+                    android:textColor="#040404"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv6"
+                    android:layout_below="@+id/tv6"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:textSize="12dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/how"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/time"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="How did you know about us?"
+                    android:textColor="@color/button"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/tv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/how"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="Alumni"
+                    android:textAlignment="center"
+                    android:textColor="#040404"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/alumni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/tv7"
+                    android:background="@color/app_theme"
+                    android:focusable="auto"
+                    android:shadowColor="@color/button"
+                    android:textAlignment="center"
+                    android:textColor="@color/button"
+                    android:textColorHighlight="@color/button"
+                    android:textColorHint="@color/button"
+                    android:textColorLink="@color/button" />
+
+                <TextView
+                    android:id="@+id/tv8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/alumni"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="Banner Ad"
+                    android:textAlignment="center"
+                    android:textColor="#040404"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/banner_ad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/tv8"
+                    android:background="@color/app_theme"
+                    android:focusable="auto"
+                    android:shadowColor="@color/button"
+                    android:textAlignment="center"
+                    android:textColor="@color/button"
+                    android:textColorHighlight="@color/button"
+                    android:textColorHint="@color/button"
+                    android:textColorLink="@color/button" />
+
+                <TextView
+                    android:id="@+id/tv9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv8"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="Friends"
+                    android:textAlignment="center"
+                    android:textColor="#040404"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/friends"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/tv9"
+                    android:background="@color/app_theme"
+                    android:focusable="auto"
+                    android:shadowColor="@color/button"
+                    android:textAlignment="center"
+                    android:textColor="@color/button"
+                    android:textColorHighlight="@color/button"
+                    android:textColorHint="@color/button"
+                    android:textColorLink="@color/button" />
+
+                <TextView
+                    android:id="@+id/tv10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv9"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="Sales Team"
+                    android:textAlignment="center"
+                    android:textColor="#040404"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/sales_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/tv10"
+                    android:background="@color/app_theme"
+                    android:focusable="auto"
+                    android:shadowColor="@color/button"
+                    android:textAlignment="center"
+                    android:textColor="@color/button"
+                    android:textColorHint="@color/button"
+                    android:textColorLink="@color/button" />
+
+                <TextView
+                    android:id="@+id/tv11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv10"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="Social Media"
+                    android:textAlignment="center"
+                    android:textColor="#040404"
+                    android:textSize="16dp" />
+
+                <CheckBox
+                    android:id="@+id/social_media"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/tv11"
+                    android:background="@color/app_theme"
+                    android:focusable="auto"
+                    android:shadowColor="@color/button"
+                    android:textAlignment="center"
+                    android:textColor="@color/button"
+                    android:textColorHint="@color/button"
+                    android:textColorLink="@color/button" />
+
+                <TextView
+                    android:id="@+id/tv12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv11"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:text="Others"
+                    android:textAlignment="center"
+                    android:textColor="#040404"
+                    android:textSize="16dp" />
+
+
+                <EditText
+                    android:id="@+id/others"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tv12"
+                    android:layout_below="@+id/tv12"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/worksans_regular"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="126dp"
+                    android:layout_height="36dp"
+                    android:layout_below="@+id/others"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/button_fill"
+                    android:fontFamily="@font/roboto_medium"
+                    android:shadowColor="#000000"
+                    android:text="SUBMIT"
+                    android:textAlignment="center"
+                    android:textColor="#ffffff"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

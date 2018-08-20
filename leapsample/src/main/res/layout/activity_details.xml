@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details"
+    android:padding="49dp">
+
+    <TextView
+        android:id="@+id/name_show4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/FragmentText"
+        android:textColor="@color/button"
+        android:text="SELECTED STUDENT"/>
+    <TextView
+        android:id="@+id/phone_show4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/FragmentText"
+        android:textColor="@color/button"
+        android:layout_below="@+id/name_show4"
+        android:layout_marginTop="20dp"
+        android:text="SELECTED CONTACT"/>
+
+    <TextView
+        android:id="@+id/email_show4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/FragmentText"
+        android:textColor="@color/button"
+        android:layout_below="@id/phone_show4"
+        android:layout_marginTop="20dp"
+        android:text="SELECTED EMAIL"/>
+
+    <TextView
+        android:id="@+id/purchased_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/FragmentText"
+        android:layout_below="@id/email_show4"
+        android:layout_marginTop="40dp"
+        android:text="PURCHASED PRODUCT: "
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/amount_paid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/purchased_pro"
+        android:layout_marginTop="20dp"
+        android:text="AMOUNT PAID: "
+        android:textAppearance="@style/FragmentText"/>
+
+</RelativeLayout>

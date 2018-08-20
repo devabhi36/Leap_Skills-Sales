@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Leap Skills Sales</string>
+
+    <string-array name="pay_token">
+
+        <item>Select</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+        <item>2000</item>
+    </string-array>
+</resources>
